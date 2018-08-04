@@ -68,7 +68,7 @@ p {
 
 @media (min-width: 992px) {
     .rowContainer {
-        width: 33%;
+        width: 32%;
         float: left;
     }
 }
