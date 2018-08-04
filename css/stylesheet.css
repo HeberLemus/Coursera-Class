@@ -42,7 +42,7 @@ p {
 .rowContainer {
     position: relative;
     /*background-color: blue;*/
-    margin: 15px;
+    margin: 5px;
     border: solid black 1px;
 }
 
@@ -68,7 +68,7 @@ p {
 
 @media (min-width: 992px) {
     .rowContainer {
-        width: 32%;
+        width: 33%;
         float: left;
     }
 }
