@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    /*must appear in top right corner, and cannot overlap with paragraph below it*/
+}
+
+h2 {
+    position: absolute;
+    margin: 0;
+    /*keep its document flow position*/
+    right: 0;
+    top: 0;
+    /*keep the section headers fixed to the top right and fix their size*/
+    height: 30px;
+    width: 100px;
+    /*border: solid black 1px;*/
+    border: solid black;
+    /*border-top-width: 0;*/
+    /*border-right-width: 0;*/
+    border-left: 1px;
+    border-bottom: 1px;
+}
+
+p {
+    text-align: left;
+    background-color: #00FFFF;
+    /*pad the paragraphs to not conflict with section headers*/
+    padding: 40px 10px 10px 10px;
+    margin: 0;
+}
+
+.rowContainer {
+    position: relative;
+    /*background-color: blue;*/
+    margin: 15px;
+    border: solid black 1px;
+}
+
+.container {
+    /*background-color: blueviolet;*/
+}
+
+/*specific section colors*/
+#item1 {
+    background-color: red;
+}
+
+#item2 {
+    background-color: orange;
+}
+
+#item3 {
+    background-color: green;
+}
+
+
+/*media specifics*/
+
+@media (min-width: 992px) {
+    .rowContainer {
+        width: 32%;
+        float: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .rowContainer {
+        float: left;
+    }
+
+    .Tablet {
+        width: 48%;
+        float: left;
+    }
+}
