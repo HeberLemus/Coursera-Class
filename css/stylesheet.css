@@ -23,12 +23,12 @@ h2 {
     /*keep the section headers fixed to the top right and fix their size*/
     height: 30px;
     width: 100px;
-    /*border: solid black 1px;*/
-    border: solid black;
+    border: solid black 1px;
+    /*border: solid black;*/
     /*border-top-width: 0;*/
     /*border-right-width: 0;*/
-    border-left: 1px;
-    border-bottom: 1px;
+    /*border-right: 1px;*/
+    /*border-bottom: 1px;*/
 }
 
 p {
@@ -41,13 +41,17 @@ p {
 
 .rowContainer {
     position: relative;
-    /*background-color: blue;*/
-    margin: 5px;
+    background-color: blue;
     border: solid black 1px;
+    margin-bottom: 10px;
 }
 
 .container {
     /*background-color: blueviolet;*/
+    width: 90%;
+    height: 10px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /*specific section colors*/
@@ -68,8 +72,21 @@ p {
 
 @media (min-width: 992px) {
     .rowContainer {
-        width: 30%;
+        width: 32%;
         float: left;
+    }
+    #column1 {
+        margin-left: 1%;
+        margin-right: 0.5%;
+    }
+
+    #column2 {
+        margin: 0 0.5%;
+    }
+
+    #column3 {
+        margin-right: 1%;
+        margin-left: 0.5%;
     }
 }
 
@@ -79,7 +96,15 @@ p {
     }
 
     .Tablet {
-        width: 48%;
+        width: 49%;
         float: left;
+    }
+
+    #column1 {
+        margin-right: 1%;
+    }
+
+    #column2 {
+        margin-left: 1%;
     }
 }
